@@ -1,4 +1,4 @@
-package com.vanguard.elasticcache.poc.service.dto;
+package com.vanguard.elasticcache.poc.domain.dto;
 
 import lombok.Data;
 

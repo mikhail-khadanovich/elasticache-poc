@@ -1,6 +1,6 @@
 package com.vanguard.elasticcache.poc.service;
 
-import com.vanguard.elasticcache.poc.service.dto.TaskDTO;
+import com.vanguard.elasticcache.poc.domain.dto.TaskDTO;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.Random;
 @Service
 public class TaskService {
 
-    @Cacheable(value = "getLongRunningTaskResult", key="{#seconds}", cacheManager = "cacheManager1Hour")
+    @Cacheable(value = "getLongRunningTaskResult", key="{#seconds}", cacheManager = "cacheManager10Seconds")
     public Optional<TaskDTO> getLongRunningTaskResult(long seconds) {
         try {
             long randomMultiplier = new Random().nextLong();

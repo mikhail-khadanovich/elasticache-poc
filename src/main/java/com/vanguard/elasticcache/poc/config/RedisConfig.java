@@ -48,9 +48,9 @@ public class RedisConfig {
         return RedisCacheManager.builder(redisConnectionFactory).cacheDefaults(RedisCacheConfiguration.defaultCacheConfig().prefixKeysWith(redisPrefix)).build();
     }
 
-    @Bean(name = "cacheManager1Hour")
+    @Bean(name = "cacheManager10Seconds")
     public CacheManager cacheManager1Hour(RedisConnectionFactory redisConnectionFactory) {
-        Duration expiration = Duration.ofHours(1);
+        Duration expiration = Duration.ofSeconds(10);
         return RedisCacheManager.builder(redisConnectionFactory)
                 .cacheDefaults(RedisCacheConfiguration.defaultCacheConfig().prefixKeysWith(redisPrefix).entryTtl(expiration)).build();
     }

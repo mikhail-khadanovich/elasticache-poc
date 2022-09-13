@@ -2,7 +2,7 @@ package com.vanguard.elasticcache.poc.controller;
 
 import com.vanguard.elasticcache.poc.controller.util.ResponseUtil;
 import com.vanguard.elasticcache.poc.service.TaskService;
-import com.vanguard.elasticcache.poc.service.dto.TaskDTO;
+import com.vanguard.elasticcache.poc.domain.dto.TaskDTO;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
