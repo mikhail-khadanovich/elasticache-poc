@@ -15,7 +15,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    @Cacheable(value = "getUserById", key = "{#id}", cacheManager = "cacheManager10Seconds")
+    @Cacheable(value = "getUserById", key = "{#id}", cacheManager = "cacheManager")
     public User getUserById(Long id) {
         User user = Hibernate.unproxy(userRepository.getById(id), User.class);
         return user;

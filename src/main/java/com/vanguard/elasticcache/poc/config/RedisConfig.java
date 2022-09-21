@@ -16,17 +16,17 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.time.Duration;
 
 
-@Configuration
-@EnableCaching
+//@Configuration
+//@EnableCaching
 public class RedisConfig {
 
-    @Value("${redis.hostname}")
+    @Value("${spring.redis.hostname}")
     private String redisHostName;
 
-    @Value("${redis.port}")
+    @Value("${spring.redis.port}")
     private int redisPort;
 
-    @Value("${redis.prefix}")
+    @Value("${spring.redis.prefix}")
     private String redisPrefix;
 
     @Bean
