@@ -1,0 +1,13 @@
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/service/TaskService.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/controller/TaskController.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/controller/util/ResponseUtil.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/UserRepository.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/controller/UserController.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/config/SimpleCacheCustomizer.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/domain/dto/TaskDTO.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/config/RedisConfig.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/ElastiCachePocApplication.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/config/SwaggerConfig.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/service/UserService.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/domain/User.java
+/Users/mkhadanovich/git/elasticache-poc/src/main/java/com/vanguard/elasticcache/poc/config/SimpleCachingConfig.java
