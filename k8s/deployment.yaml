@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elasticache-poc-deployment
+  namespace: elasticache-poc
+  labels:
+    app: elasticache-poc
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: elasticache-poc
+  template:
+    metadata:
+      labels:
+        app: elasticache-poc
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - amd64
+                      - arm64
+      containers:
+        - name: elasticache-poc
+          image: mkhadanovich/elasticache-poc:latest
+          ports:
+            - name: http
+              containerPort: 8080
+          imagePullPolicy: IfNotPresent
+      imagePullSecrets:
+        - name: regcred
+      nodeSelector:
+        kubernetes.io/os: linux
