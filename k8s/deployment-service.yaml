@@ -4,6 +4,9 @@ metadata:
   name: elasticache-poc-service
   labels:
     app: elasticache-poc
+spec:
+  selector:
+    app: elasticache-poc
   ports:
     - protocol: TCP
       port: 8080
