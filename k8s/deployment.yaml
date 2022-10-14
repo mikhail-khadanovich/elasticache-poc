@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: elasticache-poc-deployment
-  namespace: elasticache-poc
   labels:
     app: elasticache-poc
 spec:
