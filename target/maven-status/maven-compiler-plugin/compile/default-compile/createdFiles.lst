@@ -1,0 +1,13 @@
+com/vanguard/elasticcache/poc/service/TaskService.class
+com/vanguard/elasticcache/poc/domain/dto/TaskDTO.class
+com/vanguard/elasticcache/poc/config/SwaggerConfig.class
+com/vanguard/elasticcache/poc/UserRepository.class
+com/vanguard/elasticcache/poc/ElastiCachePocApplication.class
+com/vanguard/elasticcache/poc/config/RedisConfig.class
+com/vanguard/elasticcache/poc/controller/TaskController.class
+com/vanguard/elasticcache/poc/config/SimpleCachingConfig.class
+com/vanguard/elasticcache/poc/controller/UserController.class
+com/vanguard/elasticcache/poc/domain/User.class
+com/vanguard/elasticcache/poc/service/UserService.class
+com/vanguard/elasticcache/poc/config/SimpleCacheCustomizer.class
+com/vanguard/elasticcache/poc/controller/util/ResponseUtil.class
