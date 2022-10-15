@@ -39,8 +39,7 @@ public class RedisConfig {
     JedisConnectionFactory jedisConnectionFactory() {
         List<String> clusterNodes = Arrays.asList(redisHostName + ":" + redisPort);
         RedisClusterConfiguration redisClusterConfiguration = new RedisClusterConfiguration(clusterNodes);
-        redisClusterConfiguration.setUsername("poc-user");
-        redisClusterConfiguration.setPassword("password");
+        redisClusterConfiguration.setPassword("FiXWVSsPAJmA1y4c6E63pc9p4YgM4m0lJzTVeRZD0hyJTiYPqZD5YkToDxBHX9N2APQqhnqVXYNipIkErKByFD9Gx38rbF5vE80z28u2v9NGD9vZz6GtgnElS1yqAfMk");
 
         JedisClientConfiguration jedisConfig = JedisClientConfiguration.builder().useSsl().build();
         return new JedisConnectionFactory(redisClusterConfiguration, jedisConfig);
