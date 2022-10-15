@@ -1,5 +1,6 @@
 package com.vanguard.elasticcache.poc.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -19,7 +20,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-
+@Slf4j
 @Configuration
 @EnableCaching
 public class RedisConfig {
@@ -37,6 +38,7 @@ public class RedisConfig {
 
     @Bean
     JedisConnectionFactory jedisConnectionFactory() {
+        log.info("redisHostName + \":\" + redisPort: {}", redisHostName + ":" + redisPort);
         List<String> clusterNodes = Arrays.asList(redisHostName + ":" + redisPort);
         RedisClusterConfiguration redisClusterConfiguration = new RedisClusterConfiguration(clusterNodes);
         redisClusterConfiguration.setPassword("FiXWVSsPAJmA1y4c6E63pc9p4YgM4m0lJzTVeRZD0hyJTiYPqZD5YkToDxBHX9N2APQqhnqVXYNipIkErKByFD9Gx38rbF5vE80z28u2v9NGD9vZz6GtgnElS1yqAfMk");
